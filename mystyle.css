@@ -1,0 +1,83 @@
+
+/* This is just to transition when you change the viewport size. */
+* {
+  transition: all 0.25s ease-out;
+}
+body{
+  height:100%;
+  margin:0;
+  padding:0;
+}
+
+.button{
+  transition: all .2s ease-in-out; 
+  
+}
+.button:hover{
+  transform: scale(1.5);
+}
+.navbar {
+   
+background-color: rgba(0, 0, 0, 0.7);
+-webkit-backdrop-filter: blur(35px);
+backdrop-filter: blur(12px);
+width: 100vw;
+
+}
+#intropanel{
+    margin-top: 20vh;
+    margin-bottom: 20vh;
+    
+    
+   }
+#introinfo{
+    width: 40vw;
+    font-family: Inter;
+    display: flex;
+    flex-direction: column;
+   
+    
+    
+}
+#projectlist{
+    justify-content: center;
+}
+.card{
+    margin: 10px;
+    transition: all 500ms ease-in-out;
+}
+.card:hover{
+    cursor: pointer;
+    box-shadow: 0px 12px 30px 0px rgba(0, 0, 0, 0.2);
+    transition: all 800ms cubic-bezier(0.19, 1, 0.22, 1);
+    margin-top: 0px;
+    margin-bottom: 20px;
+    transform: scale(1.1);
+}
+
+.foot{
+  display: flex;
+  flex-direction: column;
+  background-color: black;
+  height: 35vh;
+  width: 100vw;
+  overflow: hidden;
+
+}
+@media only screen and (max-width: 600px) {
+   #intropanel{
+    flex-direction: column;
+    align-items: center;
+   }
+   #introinfo{
+    width: 80vw;
+   
+    font-family: Inter;
+  }
+  .btngrp{
+  
+    align-self: center;
+  }
+  
+  
+  }
